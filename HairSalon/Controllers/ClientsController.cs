@@ -8,10 +8,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HairSalon.Controllers
 {
-  public class ClientController : Controller
+  public class ClientsController : Controller
   {
     private readonly HairSalonContext _db;
-
     public ClientsController(HairSalonContext db)
     {
       _db = db;
@@ -19,7 +18,7 @@ namespace HairSalon.Controllers
 
     public ActionResult Index()
     {
-      List<Client> model = _db.Clients.Include(clients => clients.Stylists).ToList();
+      List<Client> model = _db.Clients.Include(clients => clients.Stylist).ToList();
       return View(model);
     }
 
@@ -61,7 +60,7 @@ namespace HairSalon.Controllers
     public ActionResult Delete(int id)
     {
       var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
-      return view(thisClient);
+      return View(thisClient);
     }
   
 
