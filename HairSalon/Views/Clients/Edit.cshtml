@@ -1,0 +1,28 @@
+@{
+  Layout = "_Layout";
+}
+
+@model ToDoList.Models.Item
+
+<h2>Edit</h2>
+
+<h4>Edit this client's details: @Html.DisplayFor(model => model.ClientName)</h4>
+
+@using (Html.BeginForm())
+{
+    <label>Name:</label>
+    @Html.TextBoxFor(model => model.ClientName)
+
+    <label>Style:</label>
+    @Html.TextBoxFor(model => model.Style)
+
+    <label>Phone:</label>
+    @Html.TextBoxFor(model => model.Phone)
+
+    <label>Stylist:</label>
+    @Html.DropDownList("StylistId")
+
+    <input type="submit" value="Save" />
+}
+
+<p>@Html.ActionLink("Back to clients", "Index")</p>
