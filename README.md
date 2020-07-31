@@ -13,6 +13,7 @@ _An MVC application in C# for a salon using ASP/.NET and an SQL Database constru
 | :-------------     | :------------- | :------------- | :------------- | 
 | Program will create a MVC for Clients. | input: | output:  | [ ] |
 | Program will create a MVC for Stylists. | input: | output:  | [ ] |
+| Program will link to an SQL database. | input: | output:  | [ ] |
 | Program will let the owner create a list of stylists who work at the salon and save to the database. | input: | output:  | [ ] |
 | Program will let the owner create client card for new clients including their stylist and save to the database. | input: | output:  | [ ] |
 | Program will let owner view a list of salon's stylists and add to it. | input: | output:  | [ ] |
