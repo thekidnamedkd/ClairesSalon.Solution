@@ -14,3 +14,13 @@
 /Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.dll
 /Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.pdb
 /Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.genruntimeconfig.cache
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/bin/Debug/netcoreapp2.2/HairSalon.Views.dll
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/bin/Debug/netcoreapp2.2/HairSalon.Views.pdb
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.TagHelpers.input.cache
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.TagHelpers.output.cache
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.RazorCoreGenerate.cache
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.cshtml.g.cs
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.RazorTargetAssemblyInfo.cs
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.Views.pdb
+/Users/thekidnamedkd/Desktop/ClairesSalon.Solution/HairSalon/obj/Debug/netcoreapp2.2/HairSalon.csproj.CopyComplete
