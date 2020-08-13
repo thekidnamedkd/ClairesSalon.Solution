@@ -2,24 +2,27 @@
   Layout = "_Layout";
 }
 
+@using HairSalon.Models;
 @model HairSalon.Models.Client
 
-<h4>NEW CLIENT</h4>
+<h2>NEW CLIENT</h2>
+<hr />
 
 @using (Html.BeginForm())
 {
-        <label>Name:</label>
-    @Html.TextBoxFor(model => model.ClientName)
-
-    <label>Style:</label>
-    @Html.TextBoxFor(model => model.Style)
-
-    <label>Phone:</label>
-    @Html.TextBoxFor(model => model.Phone)
-
-    <label>Stylist:</label>
-    @Html.DropDownList("StylistId")
-
+    <label>Name: </label>
+    @Html.TextBoxFor(model => model.ClientName, new {type="text", required="required", @class="form-control"})
+    <br>
+    <label>Hair Style: </label>
+    @Html.TextBoxFor(model => model.Style, new {type="text", required="required", @class="form-control"})
+    <br>
+    <label>Phone Number (digits only): </label>
+    @Html.TextBoxFor(model => model.Phone, new {type="tel",  placeholder="503XXXXXX", required="required", @class="form-control"})
+    <br>
+    <label>Stylist: </label>
+    @Html.DropDownList("StylistId", null, new { @class="form-control"})
+    <br>
     <input type="submit" value="Add Client" class="button" />
 }
+<hr />
 <p>@Html.ActionLink("Show all clients", "Index")</p>

@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Item
+@model HairSalon.Models.Client
 
 <h2>Edit</h2>
 
@@ -11,13 +11,13 @@
 @using (Html.BeginForm())
 {
     <label>Name:</label>
-    @Html.TextBoxFor(model => model.ClientName)
+    @Html.TextBoxFor(model => model.ClientName, new {required="required"})
 
     <label>Style:</label>
-    @Html.TextBoxFor(model => model.Style)
+    @Html.TextBoxFor(model => model.Style, new {required="required"})
 
     <label>Phone:</label>
-    @Html.TextBoxFor(model => model.Phone)
+    @Html.TextBoxFor(model => model.Phone, new {required="required"})
 
     <label>Stylist:</label>
     @Html.DropDownList("StylistId")

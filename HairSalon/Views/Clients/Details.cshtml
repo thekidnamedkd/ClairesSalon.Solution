@@ -4,13 +4,13 @@
 
 @model HairSalon.Models.Client
 
-<h2>Client Profile</h2>
+<h2>CLIENT PROFILE</h2>
 <hr />
-<h3>Name: @Html.DisplayFor(model => model.ClientName)</h3>
-<h4>Stylist: @Html.DisplayFor(model => model.StylistId)</h4>
+<h4>Name: @Html.DisplayFor(model => model.ClientName)</h4>
 <h4>Style: @Html.DisplayFor(model => model.Style)</h4>
 <h4>Phone Number: @Html.DisplayFor(model => model.Phone)</h4>
-<p>@Html.ActionLink("Back to client", "Index")</p>
 <hr />
-<p>@Html.ActionLink("Edit Item", "Edit", new { id = Model.ItemId })</p>
-<p>@Html.ActionLink("Delete Item", "Delete", new { id = Model.ItemId })</p>
+<p>@Html.ActionLink("Edit this client", "Edit", new { id = Model.ClientId })</p>
+<p>@Html.ActionLink("Remove this client", "Delete", new { id = Model.ClientId })</p>
+<p>@Html.ActionLink("Back to all clients", "Index")</p>
+<p>@Html.ActionLink("Return Home", "Index", "Home")</p>
