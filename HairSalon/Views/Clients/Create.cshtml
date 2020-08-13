@@ -2,7 +2,6 @@
   Layout = "_Layout";
 }
 
-@using HairSalon.Models;
 @model HairSalon.Models.Client
 
 <h2>NEW CLIENT</h2>
@@ -15,11 +14,11 @@
     <label>Hair Style: </label>
     @Html.TextBoxFor(model => model.Style, new {type="text", required="required", @class="form-control"})
     <br>
-    <label>Phone Number (digits only): </label>
-    @Html.TextBoxFor(model => model.Phone, new {type="tel",  placeholder="503XXXXXX", required="required", @class="form-control"})
+    <label>Phone Number (10 digits only): </label>
+    @Html.TextBoxFor(model => model.Phone, new {type="tel",  placeholder="503xxxxxxx", required="required", @class="form-control"})
     <br>
     <label>Stylist: </label>
-    @Html.DropDownList("StylistId", null, new { @class="form-control"})
+    @Html.DropDownList("StylistId", null, new {required="required", @class="form-control"})
     <br>
     <input type="submit" value="Save" class="btn btn-warning">
 }
