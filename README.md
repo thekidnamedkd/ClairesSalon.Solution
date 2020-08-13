@@ -30,7 +30,7 @@ CREATE DATABASE `kevin_davis`;
 
 USE `kevin_davis`;
 
-CREATE TABLE `Items` (
+CREATE TABLE `Clients` (
   `ClientId` int(11) NOT NULL AUTO_INCREMENT,
   `ClientName` varchar(255) DEFAULT NULL,
   `Style` varchar(255) DEFAULT NULL,

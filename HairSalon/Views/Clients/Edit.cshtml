@@ -4,25 +4,24 @@
 
 @model HairSalon.Models.Client
 
-<h2>Edit</h2>
-
-<h4>Edit this client's details: @Html.DisplayFor(model => model.ClientName)</h4>
-
+<h2>EDIT DETAILS</h2>
+<hr />
 @using (Html.BeginForm())
 {
     <label>Name:</label>
-    @Html.TextBoxFor(model => model.ClientName, new {required="required"})
-
+    @Html.TextBoxFor(model => model.ClientName, new {type="text", required="required", @class="form-control"})
+    <br>
     <label>Style:</label>
-    @Html.TextBoxFor(model => model.Style, new {required="required"})
-
+    @Html.TextBoxFor(model => model.Style, new {type="text", required="required", @class="form-control"})
+    <br>
     <label>Phone:</label>
-    @Html.TextBoxFor(model => model.Phone, new {required="required"})
-
+    @Html.TextBoxFor(model => model.Phone, new {type="tel",  placeholder="503XXXXXX", required="required", @class="form-control"})
+    <br>
     <label>Stylist:</label>
-    @Html.DropDownList("StylistId")
-
+    @Html.DropDownList("StylistId", null, new { @class="form-control"})
+    <br>
     <input type="submit" value="Save" />
 }
-
-<p>@Html.ActionLink("Back to clients", "Index")</p>
+<hr />
+<p>@Html.ActionLink("Back to all clients", "Index")</p>
+<p>@Html.ActionLink("Return Home", "Index", "Home")</p>

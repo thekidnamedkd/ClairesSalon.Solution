@@ -7,7 +7,6 @@
 
 <h2>NEW CLIENT</h2>
 <hr />
-
 @using (Html.BeginForm())
 {
     <label>Name: </label>
@@ -22,7 +21,8 @@
     <label>Stylist: </label>
     @Html.DropDownList("StylistId", null, new { @class="form-control"})
     <br>
-    <input type="submit" value="Add Client" class="button" />
+    <input type="submit" value="Save" class="btn btn-dark">
 }
 <hr />
-<p>@Html.ActionLink("Show all clients", "Index")</p>
+<p>@Html.ActionLink("Return to all clients", "Index")</p>
+<p>@Html.ActionLink("Return home", "Index", "Home")</p>

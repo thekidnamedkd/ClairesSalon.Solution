@@ -5,22 +5,12 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 
-<h2>Stylist Details</h2>
+<h2>STYLIST PROFILE</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.StylistName)</h3>
-
-<ul>
-@if (@Model.Clients.Count == 0)
-{
-  <p>This stylist has been assigned no clients yet.</p>
-}
-
-@foreach (Client client in @Model.Clients)
-{
-  <li>Description: @client.ClientName</li>
-}
+<h3>@Html.DisplayFor(model => model.StylistName)</h3>
 </ul>
-
+<hr />
 <p>@Html.ActionLink("Back to stylists", "Index")</p>
 <p>@Html.ActionLink("Edit this stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Remove this stylist", "Delete", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>

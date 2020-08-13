@@ -3,13 +3,15 @@
 }
 
 @model HairSalon.Models.Client
-
-<h2>Are you sure you want to remove this client?</h2>
+<h2>REMOVE CLIENT</h2>
 <hr />
-@Html.DisplayNameFor(model => model.ClientName): @Html.DisplayFor(model => model.ClientName)
+<h4>Are you sure you want to remove this client?</h4>
+<label>Client Name: </label>
+@Html.DisplayFor(model => model.ClientName)
 @using (Html.BeginForm())
 {
-    <input type="submit" value="Delete" />
+    <input type="submit" value="Remove" class="btn btn-danger">
 }
 <hr />
-@Html.ActionLink("Back to clients", "Index")
+<p>@Html.ActionLink("Back to all clients", "Index")</p>
+<p>@Html.ActionLink("Return home", "Index", "Home")</p>
