@@ -7,7 +7,17 @@
 
 <h2>STYLIST PROFILE</h2>
 <hr />
-<h3>@Html.DisplayFor(model => model.StylistName)</h3>
+<h3>Clients for @Html.DisplayFor(model => model.StylistName):</h3>
+
+@if (@Model.Clients.Count == 0)
+{
+  <h4>This stylist has no clients yet!</h4>
+}
+
+@foreach (Client client in Model.Clients)
+{
+  <h4>+ @client.ClientName</h4>
+}
 </ul>
 <hr />
 <p>@Html.ActionLink("Back to stylists", "Index")</p>
