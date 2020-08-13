@@ -4,6 +4,8 @@
 
 #### By _**KEVIN DAVIS**_
 
+![A Salon](./img/evidenza-salone-80-2.jpg)
+
 ## Description
 
 _An MVC application in C# for a salon using ASP/.NET and an SQL Database constructed and managed by Entity. It will keep track of the salon's many clients and the particular stylist for each client demonstrating a one-to-many relationship._
@@ -17,8 +19,8 @@ _An MVC application in C# for a salon using ASP/.NET and an SQL Database constru
 | Program will let the owner create a list of stylists who work at the salon and save to the database. | input: | output:  | [X] |
 | Program will let the owner create client card for new clients including their stylist and save to the database. | input: | output:  | [X] |
 | Program will let the owner view a list of salon's clients and add to it. | input: | output:  | [X] |
-| Program will let the owner view a list of salon's stylists and add to it. | input: | output:  | [ ] |
-| Program will let the owner view client card, update info, or delete. | input: | output:  | [ ] |
+| Program will let the owner view a list of salon's stylists and add to it. | input: | output:  | [X] |
+| Program will let the owner view client card, update info, or delete. | input: | output:  | [X] |
 
 ## SQL Database Instructions
 * _Prior to running this program you will need to have MySQL installed on your machine. Go to https://dev.mysql.com/downloads/file/?id=484914 and follow next steps to install for your OS. More details with recommended login details here: https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql_
@@ -37,7 +39,6 @@ CREATE TABLE `Clients` (
   `Phone` varchar(255) DEFAULT NULL,
   `StylistId` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`ClientId`)
-  CONSTRAINT `FK_Clients_Stylists_StylistId` FOREIGN KEY (`StylistId`) REFERENCES `Stylists` (`StylistId`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 CREATE TABLE `Stylists` (

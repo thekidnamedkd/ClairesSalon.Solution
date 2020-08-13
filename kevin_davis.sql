@@ -16,53 +16,54 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `clients`
+-- Table structure for table `Clients`
 --
 
-DROP TABLE IF EXISTS `clients`;
+DROP TABLE IF EXISTS `Clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `clients` (
+CREATE TABLE `Clients` (
   `ClientId` int(11) NOT NULL AUTO_INCREMENT,
-  `ClientName` varchar(255) DEFAULT NULL,
-  `Style` varchar(255) DEFAULT NULL,
-  `Phone` varchar(255) DEFAULT NULL,
-  `StylistId` int(11) DEFAULT '0',
+  `ClientName` varchar(255) NOT NULL,
+  `Style` varchar(255) NOT NULL,
+  `Phone` varchar(255) NOT NULL,
+  `StylistId` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ClientId`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `clients`
+-- Dumping data for table `Clients`
 --
 
-LOCK TABLES `clients` WRITE;
-/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (1,'Kevin','Short','9715707426',0),(2,'Kevin','Short','9715707426',0),(3,'Kevin','Short','9715707426',0);
-/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
+LOCK TABLES `Clients` WRITE;
+/*!40000 ALTER TABLE `Clients` DISABLE KEYS */;
+INSERT INTO `Clients` VALUES (1,'Kevin','Short','9715707426',2),(2,'Rachel','Short','9715707426',3),(3,'Mike','Long','50333044003',1);
+/*!40000 ALTER TABLE `Clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `stylists`
+-- Table structure for table `Stylists`
 --
 
-DROP TABLE IF EXISTS `stylists`;
+DROP TABLE IF EXISTS `Stylists`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `stylists` (
+CREATE TABLE `Stylists` (
   `StylistId` int(11) NOT NULL AUTO_INCREMENT,
   `StylistName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `stylists`
+-- Dumping data for table `Stylists`
 --
 
-LOCK TABLES `stylists` WRITE;
-/*!40000 ALTER TABLE `stylists` DISABLE KEYS */;
-/*!40000 ALTER TABLE `stylists` ENABLE KEYS */;
+LOCK TABLES `Stylists` WRITE;
+/*!40000 ALTER TABLE `Stylists` DISABLE KEYS */;
+INSERT INTO `Stylists` VALUES (1,'Richie'),(2,'Sarah'),(3,'Von');
+/*!40000 ALTER TABLE `Stylists` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -74,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-31 17:14:39
+-- Dump completed on 2020-08-13  1:28:19
