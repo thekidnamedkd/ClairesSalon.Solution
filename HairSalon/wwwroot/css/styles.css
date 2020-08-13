@@ -1,4 +1,5 @@
 body {
+  background-image: url("https://www.vippng.com/png/full/89-891894_grid-transparent-backgrounds-black-tile.png");
   background-color: blanchedalmond;
 }
 
@@ -11,6 +12,7 @@ body {
 }
 
 h1 {
+  font-size: 6em;
   color: palevioletred;
   text-shadow: black 1px 1px;
 }
