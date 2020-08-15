@@ -8,6 +8,9 @@
 <hr />
 @using (Html.BeginForm())
 {
+    @Html.HiddenFor(model => model.StylistId)
+    @Html.HiddenFor(model => model.ClientId)
+
     <label>Name:</label>
     @Html.TextBoxFor(model => model.ClientName, new {type="text", required="required", @class="form-control"})
     <br>
