@@ -37,7 +37,7 @@ CREATE TABLE `Clients` (
   `ClientName` varchar(255) DEFAULT NULL,
   `Style` varchar(255) DEFAULT NULL,
   `Phone` varchar(255) DEFAULT NULL,
-  `StylistId` int(11) NOT NULL AUTO_INCREMENT,
+  `StylistId` int(11) NOT NULL,
   PRIMARY KEY (`ClientId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -48,6 +48,8 @@ CREATE TABLE `Stylists` (
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 * _Proceed to next set of instructions for Setup/Installation._
+
+* _**ALTERNATIVELY:** you can also import the schema via a SQL GUI like MySQL Workbench (Download & Install: https://dev.mysql.com/downloads/workbench/) - once installed navigate to the 'Schema Import' option and add the file kevin_davis.sql available in this project directory at the top level. Click Import and then 'Apply'. Refresh your schema index to see the database in your GUI. It should now be available to the HairSalon program when you run it in the next steps._
 
 
 ## Program Setup/Installation Requirements
